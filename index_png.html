@@ -1,4 +1,11 @@
 <html>
+	<script>
+		setTimeout(function() {
+			var perf = window.performance;
+			console.log('performance timing ', perf.timing.domComplete - perf.timing.fetchStart)
+			console.log('performance memory ',  perf.memory)
+		}, 2000)
+	</script>
 <body>
 		<img src="file:///Users/jiten.agarwal/Downloads/sample/Example.png">
 	<img src="file:///Users/jiten.agarwal/Downloads/sample/Example.png">
